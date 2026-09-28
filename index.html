@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-XSata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="asset/SMK-N-1-TENGARAN-png.png">
+</head>
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="bg-circle circle-one"></div>
+    <div class="bg-circle circle-two"></div>
+
+    <!-- FORM -->
+    <div class="container">
+        <div class="form-card">
+
+            <div class="logo">
+                <img src="asset/SMK-N-1-TENGARAN-png.png" alt="">
+            </div>
+
+            <h1>Daftar Ekstrakurikuler</h1>
+            <p class="subtitle">Kembangkan bakat dan minatmu bersama kami!</p>
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                    <small id="namaError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="contoh@email.com">
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Minimal 8 karakter">
+                    <small id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Konfirmasi Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Masukkan ulang password">
+                    <small id="confirmError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="ekskul">Pilihan Ekstrakurikuler</label>
+                    <select id="ekskul">
+                            <option value="">-- Pilih Ekstrakurikuler --</option>
+                            <option value="Pramuka">⚜️ Pramuka</option>
+                            <option value="OSIS">🏛️ OSIS</option>
+                            <option value="Rohis">🕌 Rohis</option>
+                            <option value="Silat">🥋 Silat</option>
+                            <option value="Paduan Suara">🎤 Paduan Suara</option>
+                            <option value="Volly">🏐 Volly</option>
+                            <option value="Futsal">⚽ Futsal</option>
+                            <option value="PMR">🩺 PMR</option>
+                            <option value="Paskibra">🇮🇩 Paskibra</option>
+                            <option value="Multimedia">🎨 Multimedia</option>
+                    </select>
+                    <small id="ekskulError"></small>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Daftar Sekarang <span>→</span>
+                </button>
+
+                <div id="successMessage" class="success-message"></div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ================= CHATBOT ================= -->
+
+    <button id="chatButton" class="chat-button">🤖</button>
+
+    <div id="chatbot" class="chatbot">
+
+        <div class="chat-header">
+            <div class="bot-profile">
+                <div class="bot-icon">🤖</div>
+                <div>
+                    <strong>EkskulBot</strong>
+                    <span>● Online</span>
+                </div>
+            </div>
+            <button id="closeChat" class="close-chat">×</button>
+        </div>
+
+        <div id="chatBody" class="chat-body">
+
+            <div class="bot-message">
+                Hai! 👋 <br><br>
+                Aku <b>EkskulBot</b>. Aku bisa membantu kamu tentang pendaftaran ekstrakurikuler. <br><br>
+                Coba pilih pertanyaan di bawah ya 😊
+            </div>
+
+            <div class="quick-buttons">
+                <button data-question="cara daftar">📝 Cara daftar</button>
+                <button data-question="pilihan ekskul">🎯 Pilihan ekskul</button>
+                <button data-question="password">🔐 Password</button>
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Ketik pesan...">
+            <button id="sendButton">➤</button>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
