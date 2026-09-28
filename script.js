@@ -115,11 +115,10 @@ function jawabanBot(pesan) {
   }
 
   if (
-    pesan.includes("optimus") ||
-    pesan.includes("prime") ||
-    pesan.includes("optimus prime")
+    pesan.includes("assalamualaikum") ||
+    pesan.includes("Assalamu'alaikum")
   ) {
-    return "I am Optimus Prime, and I send this message to any surviving Autobots taking refuge among the stars: We are here. We are waiting.";
+    return "🤖 Wa'alaikumussalam";
   }
 
   if (
@@ -128,14 +127,6 @@ function jawabanBot(pesan) {
     pesan.includes("jawa")
   ) {
     return "Gausah rasis mas😹😹";
-  }
-
-  if (
-    pesan.includes("autobot") ||
-    pesan.includes("autobots") ||
-    pesan.includes("AutoBot")
-  ) {
-    return "Autobots, roll out!";
   }
 
   if (
@@ -203,11 +194,35 @@ function jawabanBot(pesan) {
     return "🤖 🎨 Multimedia berkaitan dengan desain, foto, video, editing, dan pembuatan konten digital.";
   }
 
+  if (pesan.includes("seni tari") || pesan.includes("tari")) {
+    return "🤖 💃 Seni Tari melatih ekspresi seni, keluwesan gerak, kekompakan, dan pelestarian budaya.";
+  }
+
+  if (pesan.includes("bahasa jepang") || pesan.includes("jepang")) {
+    return "🤖 🇯🇵 Bahasa Jepang melatih kemampuan berbahasa asing, kosakata, dan wawasan budaya Jepang.";
+  }
+
+  if (
+    pesan.includes("safety riding") ||
+    pesan.includes("safety ridding") ||
+    pesan.includes("riding")
+  ) {
+    return "🤖 🏍️ Safety Riding melatih keselamatan berkendara, kedisiplinan, dan kesadaran berlalu lintas.";
+  }
+
+  if (pesan.includes("rebana")) {
+    return "🤖 🥁 Rebana melatih seni musik islami, kekompakan tim, dan pelestarian budaya religi.";
+  }
+
+  if (pesan.includes("jurnalistik")) {
+    return "🤖 📰 Jurnalistik melatih kemampuan menulis berita, wawancara, fotografi, dan literasi media.";
+  }
+
   if (pesan.includes("terima kasih") || pesan.includes("makasih")) {
     return "🤖 Sama-sama! 😊 Semoga pendaftarannya lancar.";
   }
 
-  return "🤖 Maaf, aku belum memahami pertanyaan itu 😅 Coba tanyakan tentang cara daftar, pilihan ekskul, syarat, password, Pramuka, OSIS, Rohis, Silat, Paduan Suara, Volly, Futsal, PMR, Paskibra, atau Multimedia.";
+  return "🤖 Maaf, aku belum memahami pertanyaan itu 😅 Coba tanyakan tentang cara daftar, pilihan ekskul, syarat, password, Pramuka, OSIS, Rohis, Silat, Paduan Suara, Volly, Futsal, PMR, Paskibra, dan lainnya.";
 }
 
 // ================= KIRIM PESAN =================
