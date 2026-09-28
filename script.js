@@ -115,11 +115,27 @@ function jawabanBot(pesan) {
   }
 
   if (
+    pesan.includes("optimus") ||
+    pesan.includes("prime") ||
+    pesan.includes("optimus prime")
+  ) {
+    return "I am Optimus Prime, and I send this message to any surviving Autobots taking refuge among the stars: We are here. We are waiting.";
+  }
+
+  if (
     pesan.includes("jawir") ||
     pesan.includes("sunda") ||
     pesan.includes("jawa")
   ) {
     return "Gausah rasis mas😹😹";
+  }
+
+  if (
+    pesan.includes("autobot") ||
+    pesan.includes("autobots") ||
+    pesan.includes("AutoBot")
+  ) {
+    return "Autobots, roll out!";
   }
 
   if (
