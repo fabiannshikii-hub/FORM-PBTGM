@@ -116,12 +116,14 @@ function jawabanBot(pesan) {
 
   if (
     pesan.includes("jawir") ||
-    pesan.includes("jawa") 
+    pesan.includes("sunda") ||
+    pesan.includes("jawa")
   ) {
     return "Gausah rasis mas😹😹";
   }
 
   if (
+    pesan.includes("daftar") ||
     pesan.includes("cara daftar") ||
     pesan.includes("cara mendaftar") ||
     pesan.includes("pendaftaran")
@@ -130,13 +132,13 @@ function jawabanBot(pesan) {
   }
 
   if (
+    pesan.includes("ekskul") ||
     pesan.includes("pilihan ekskul") ||
     pesan.includes("pilihan ekstrakurikuler") ||
     pesan.includes("ekskul apa")
   ) {
-    return "🤖 Pilihan ekskul yang tersedia adalah 🏕️ Pramuka, ⚽ Futsal, 🩺 PMR, 🇮🇩 Paskibra, dan 🎨 Multimedia.";
+    return "🤖 Pilihan ekskul yang tersedia adalah 🏕️ Pramuka, ⚽ Futsal, 🩺 PMR, 🇮🇩 Paskibra, dan lainnya.";
   }
-
   if (pesan.includes("syarat")) {
     return "🤖 Syaratnya adalah mengisi data pendaftaran dengan lengkap dan memilih ekstrakurikuler yang diinginkan.";
   }
@@ -147,6 +149,26 @@ function jawabanBot(pesan) {
 
   if (pesan.includes("pramuka")) {
     return "🤖 🏕️ Pramuka melatih kedisiplinan, kemandirian, kerja sama, dan kepemimpinan.";
+  }
+
+  if (pesan.includes("osis")) {
+    return "🤖 🏛️ OSIS melatih jiwa kepemimpinan, organisasi, manajemen kegiatan, dan tanggung jawab.";
+  }
+
+  if (pesan.includes("rohis")) {
+    return "🤖 🕌 Rohis fokus pada pembinaan keagamaan, kajian Islam, dan pengembangan akhlak.";
+  }
+
+  if (pesan.includes("silat")) {
+    return "🤖 🥋 Silat melatih bela diri, kedisiplinan, ketangkasan, dan mental yang kuat.";
+  }
+
+  if (pesan.includes("paduan suara") || pesan.includes("paduan")) {
+    return "🤖 🎤 Paduan Suara melatih olah vokal, harmoni bermusik, dan kekompakan tim.";
+  }
+
+  if (pesan.includes("volly") || pesan.includes("voli")) {
+    return "🤖 🏐 Volly melatih kerja sama tim, refleks, dan kekuatan fisik.";
   }
 
   if (pesan.includes("futsal")) {
@@ -169,7 +191,7 @@ function jawabanBot(pesan) {
     return "🤖 Sama-sama! 😊 Semoga pendaftarannya lancar.";
   }
 
-  return "🤖 Maaf, aku belum memahami pertanyaan itu 😅 Coba tanyakan tentang cara daftar, pilihan ekskul, syarat, password, Pramuka, Basket, Futsal, PMR, Paskibra, atau Multimedia.";
+  return "🤖 Maaf, aku belum memahami pertanyaan itu 😅 Coba tanyakan tentang cara daftar, pilihan ekskul, syarat, password, Pramuka, OSIS, Rohis, Silat, Paduan Suara, Volly, Futsal, PMR, Paskibra, atau Multimedia.";
 }
 
 // ================= KIRIM PESAN =================
