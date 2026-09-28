@@ -115,6 +115,13 @@ function jawabanBot(pesan) {
   }
 
   if (
+    pesan.includes("jawir") ||
+    pesan.includes("jawa") 
+  ) {
+    return "Gausah rasis mas😹😹";
+  }
+
+  if (
     pesan.includes("cara daftar") ||
     pesan.includes("cara mendaftar") ||
     pesan.includes("pendaftaran")
@@ -200,16 +207,4 @@ chatInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     kirimPesan();
   }
-});
-
-// ================= QUICK QUESTION =================
-
-const quickButtons = document.querySelectorAll(".quick-buttons button");
-
-quickButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    const pertanyaan = button.getAttribute("data-question");
-    chatInput.value = pertanyaan;
-    kirimPesan();
-  });
 });
